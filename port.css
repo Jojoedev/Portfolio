@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body{
+font-family: 'lato', sans-serif;
+font-size: 20px;
+margin: auto;
+
+}
+
+header{
+	background: teal;
+	border-bottom: white 2px solid;
+}
+
+.container{
+	margin: auto;
+	width: 80%;
+	overflow: hidden;
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+nav li  {
+	
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+}
+nav {
+	
+	float: right;
+
+}
+
+#home{
+	float: left;
+	color: gold;
+}
+
+nav li:hover{
+	border-bottom: gold 2px solid ;
+}
+
+.showcase{
+	background: url("sunset.jpg") no-repeat 0, 0px;
+	text-align: center;
+	height: 400px;
+	color: white;
+}
+
+.showcase{
+
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  	 /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.showcase h1{
+	font-size: 40px;
+	font-weight: bolder;
+	line-height: 50px;
+	
+	
+}
+.showcase p{
+	font-size: 20px;
+	
+	margin-top: 60px;
+}
+
+.subscribe {
+	background: teal;
+	height: 100px;
+	color: gold;
+
+
+}
+
+.containermediaquery{
+padding-bottom: 30px;
+}
+
+/*
+.footer::before, .footer::after{
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -70px;
+	right: 0;
+	left: 0;
+	background: slategray;
+	transform: skewY(-3deg);
+
+}
+
+*/
+
+
+.showcase, .services-heading{
+	animation: slideFromLeft 1s ease-in;
+}
+
+.subscribe {
+	animation: slideFromRight 1s ease-in;
+}
+
+.contact-info {
+	animation: slideFromTop 1s ease-in;
+}
+
+/*Animation */
+
+
+
+@keyframes slideFromLeft {
+	0% {transform: translateX(-100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+@keyframes slideFromRight {
+	0% {transform: translateX(100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+@keyframes slideFromTop {
+	0% {transform: translateY(100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+
+
+#newsletter h3{
+	float: left;
+	
+}
+	#newsletter #newsForm{
+	float: right;
+	padding-top: 20px;
+	font-size: 40px;
+
+}
+
+	#newsletter #newsForm input{
+
+	font-size: 15px;
+}
+
+	.container #moveTotop {
+	text-decoration: none;
+	float: right;
+}
+
+	.footer {
+	font-size: 15px;
+	padding: 10px;
+	background-color: gray;
+	border-top: 2px white solid;
+	text-align: center;
+}
+
+.footer h3{
+font-size: 15px;
+color: black;	
+}
+	.newsForm input[type='text'],
+	.newsForm input[type='email']{
+		border: 0;
+		border-bottom: 1px gold solid;
+
+
+	}
+
+	.newsForm input:focus {
+		outline: none;
+	}
+
+	/* BTN utility */
+
+	.btn:hover {
+		cursor: pointer;
+	}
+
+	.btn	{
+
+	font-weight: 200;
+	}
+	.btn:hover	{
+
+	background: gold;
+	}
+
+	
+	img{
+		
+		width: 250px;
+  	height: 300px;
+	}
+
+
+	img{
+	transition: 0.2s all;
+	}
+
+	img:hover{
+	transform: scale(1.2);
+	}
+
+.contact-info h2{
+	font-size: 20px;
+	font-style: initial;
+}
+
+
+.grid-3{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.projects{
+	background: teal;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+.card{
+	background: #a1b3a5;
+	width: auto;
+	padding: 20px 20px;
+	
+	border-radius: 5px;
+	height: 300px;
+	position: relative;
+
+}
+.card input[type="text"],
+.card input[type="email"]{
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px gray solid;
+	width: 90%;
+	padding: 5px;
+}
+
+.card input[type="text"],
+.card input[type="email"]:focus{
+	outline: none;
+}
+
+.enquiry-note:focus{
+	outline: none;
+}
+
+.text-area{
+	width: 95%;
+	height: 80px;
+}
+.personal-info, .services-heading, .contact-info{
+	background: #d4cfc7;
+
+}
+
+#asideOne:hover, #profile:hover{
+	background: linen;
+	color: blue;
+}
+
+
+
+.grid-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+	text-align: justify;
+}
+
+.contact-aside{
+	text-align: justify;
+}
+
+.projects .grid-3 label{
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	
+}
+
+/* Tablets and under */
+
+@media(max-width: 768px) {
+.grid-3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	img{
+		width: 200px;
+  	height: 250px;
+	}
+
+	.subscribe #newsletter{
+		font-size: 12px;
+		margin: auto;
+		height: auto;
+
+	}
+
+	#newsForm input[type="email"]
+	 {
+	width: 110px; 
+	line-height: 10px;
+	
+
+}
+#newsForm input[type="submit"]{
+width: auto;
+}
+.contact-info h2{
+	font-size: 20px;
+}
+
+}
+	
+
+
+/* Mobile */
+@media(max-width: 500px) {
+.navbar{
+	height: 110px;
+	}
+
+	.navbar .flex{
+		flex-direction: column;
+	}
+	.navbar ul{
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	
+
+	.subscribe #newsletter{
+		font-size: 10px;
+		padding: 0;
+		margin: 0;
+		
+	}
+
+	
+	#newsForm input{
+	width: 110px; 
+	/*width: fit-content;*/
+	float: left;
+	margin-bottom: 10px;
+	}
+
+	.btn{
+	box-sizing: 10px;
+		}
+	
+
+	header{
+		line-height: 15px;
+		font-size: 15px;
+		margin-top: auto;
+	}
+
+	.showcase h1, p{
+		font-size: 20px;
+	}
+
+	img{
+		
+		width: 300px;
+  		height: 400px;
+  		margin: auto;
+  	
+	}
+
+	.personal-info #profile, #asideOne{
+	font-size: 15px;
+	
+	}
+
+
+	.grid-2 #profile p{
+		color: gold;
+	}
+
+	.personal-info #asideOne{
+	float: left;
+	}
+	
+	.grid-2 {
+		font-size: 20px;
+		grid-template-columns: 1fr;
+		
+	}
+	.grid-3 {
+		
+	grid-template-columns: 1fr;
+	}
+
+	
+
+.form-control{
+		grid-template-columns: 1fr;
+		font-size: 10px;
+
+
+	}
+
+.contact-info h2{
+	font-size: 15px;
+}
